@@ -7,3 +7,45 @@ body {
   background-color: #3E60AD;
   border-color: white;
 }
+
+#logo{
+	display: block;
+
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/logobefore.png);
+	background-size: auto 50px;
+	background-repeat: no-repeat;	
+}
+#logo:hover
+{
+	display:block;
+	repeat:no-repeat;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/logo.png);
+	background-size: auto 50px;
+}
+.navbar {
+  background-color: #2C447A;
+}
+.navbar-inverse 
+.navbar-nav>li>a {
+	color:#DDD;
+}
+
+.navbar-inverse li a:hover{
+	text-shadow: 0px 0px 5px #FFFFFF;
+}
+#login{
+	display: block;
+	width: 90px;
+	height: 50px;
+	background-image: url(../images/login2.png);
+	background-repeat: no-repeat;
+	background-position: 60px 50%;
+}
+#login:hover{
+	background-image: url(../images/login3.png);
+	background-position: 60px 50%;
+}
