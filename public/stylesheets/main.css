@@ -1,3 +1,9 @@
 body {
   padding-top: 70px;  /* Move body of page below navbar. */
 }
+
+.panel-default>.panel-heading {
+  color: white;
+  background-color: #3E60AD;
+  border-color: white;
+}
