@@ -59,7 +59,8 @@ navigation bar section
 }
 
 .navbar {
-	background-color: #2C447A;
+	/*background-color: #2C447A;*/
+	background: #1F1E1D;
 }
 
 .navbar-inverse 
@@ -157,9 +158,6 @@ navigation bar section
 @media only screen and (min-width: 1000px) {
 .col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12
 {
-	-webkit-transition-property: background color;
-	-webkit-transition-duration: 0.5s;
-	-webkit-transition-timing-function: ease;
 	float: left;
 }
 .col-lg-3 {
@@ -193,26 +191,26 @@ navigation bar section
 }
 
 @media ( min-width : 250px) {
-	.mycontainer {
-		width: 250px;
-	}
+.mycontainer {
+	width: 250px;
+}
 }
 
 @media ( min-width : 500px) {
-	.mycontainer {
-		width: 500px;
-	}
+.mycontainer {
+	width: 500px;
+}
 }
 
 @media ( min-width : 750px) {
-	.mycontainer {
-		width: 750px;
-	}
+.mycontainer {
+	width: 750px;
+}
 }
 @media ( min-width : 1000px) {
-	.mycontainer {
-		width: 1000px;
-	}
+.mycontainer {
+	width: 1000px;
+}
 }
 
 /* MARKETING CONTENT filling*/
@@ -240,5 +238,8 @@ navigation bar section
 	background-color: #fff;
 	margin-top: -19px;
 }
+
+
+
 
 
