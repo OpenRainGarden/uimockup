@@ -16,6 +16,7 @@
 <body>
 
   <!-- Navbar -->
+  <!-- Responsive navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -23,7 +24,8 @@
           <!--  Display three horizontal lines when navbar collapsed. -->
           <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="./index.html">Hui o Ko'olaupoko</a>
+        <a id="logo" href="../index.html"></a>
+        <!-- <a class="navbar-brand" href="./index.html">Hui o Ko'olaupoko</a>-->
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -32,11 +34,11 @@
           <li><a href="#">Education</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="./login.html">Login</a></li>
-        </ul>
+          <li><a id="login" href="./login.html">Login</a></li>
       </div>
     </div>
   </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -46,18 +48,22 @@
           <li><a href="#">Messages</a></li>
         </ul>
         <div class="well">
-            <div class="image">
-              <img src="../public/images/rg_photo.png" class="img-responsive" alt="" />
-              <h2 class="image_title">
-                <span>Rain Garden in Kailua</span>
-              </h2>
-              <hr />
+          <h1 id="pageTitle">Rain Garden on O'ahu</h1>
+          <div class="row">
+            <div class="col-md-8" style="padding-top: 10px; line-height: 24px;">
+              <p>This rain garden is located in Hawai'i on the island of O'ahu. It is located in Kailua which is on
+                the windwward side of the island. This garden consists of many fruit plants that are cultivated and
+                grown in Hawai'i.</p>
+            </div>
+            <div class="col-md-4">
+              <div class="panel" style="background: ##94A779;">
+                <img src="../public/images/rg_photo.png" class="img-responsive" style="padding: 10px;"> <b>Owner</b>:
+                Diana T.<br /> <b>Property</b>: Residential<br /> <b>Size</b>: ~200 sq ft<br />
+              </div>
+            </div>
           </div>
           <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <p>This rain garden is located in Windward O'ahu.</p>
-              <p>Composed of various native plants, this rain garden is a small</p>
-            </div>
+            
           </div>
         </div>
       </div>
