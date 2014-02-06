@@ -86,32 +86,7 @@ navigation bar section
 	background-position: 60px 50%;
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
 
-/* Pad the edges of the mobile views a bit */
-.story{
-	width:240px;
-	height:240px;
-	margin: 5px;
-    background: none repeat scroll 0% 0% rgb(255, 255, 255);
-    border: 1px solid rgb(183, 192, 199);
-    color: #EEE;
-    float: left;
-    font-size: 0.9em;
-    padding: 6px;
-    position: relative;
-    text-decoration: none;
-}
-
-.marketing .story {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.marketing h2 {
-  font-weight: normal;
-}
 
 
 
@@ -213,7 +188,33 @@ navigation bar section
 }
 }
 
-/* MARKETING CONTENT filling*/
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+.story{
+	width:240px;
+	height:240px;
+	margin: 5px;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    border: 1px solid rgb(183, 192, 199);
+    color: #FB4;
+    float: left;
+    font-size: 0.9em;
+    padding: 6px;
+    position: relative;
+    text-decoration: none;
+}
+
+.marketing .story {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.marketing h2 {
+  font-weight: normal;
+}
 .postthumb{
 	position: absolute;
 	width:226px;
@@ -224,13 +225,16 @@ navigation bar section
 	background-size: 226px 226px;
 	height: 226px;
 	margin-top: -226px;
+	z-index:23;
 }
+
 .postthumb:hover{
 
 	-webkit-transition-property: background color;
-	-webkit-transition-duration: 1s;
+	-webkit-transition-duration: 0.5s;
 	-webkit-transition-timing-function: ease;
-	background-position: 0px 230px;
+	background-position: 0px 226px;
+	text-decoration: none;
 }
 .thumbs-hovering{
 	height: 226px;
@@ -239,7 +243,32 @@ navigation bar section
 	margin-top: -19px;
 }
 
+.thumbs-hovering h2{
+	position: absolute;
+	font-size: 16pt;
+	width: 226px;
+	height: 19px;
+	top: 34px;
+	text-align: center;
 
+}
+.thumbs-hovering p{
+	position: absolute;
+	font-size: 12pt;
+	width: 226px;
+	height: 19px;
+	top: 60px;
+	color: #000;
+	text-align: center;
+	
+}
+.thumbs-hovering div{
+	position: absolute;
+	font-size: 10pt;
+	width: 226px;
+	height: 19px;
+	color: #888;	
+}
 
 
 

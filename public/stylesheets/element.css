@@ -240,25 +240,18 @@ body {
   font-size: 2.0em;
 }
 
-.element.large,
-.variable-sizes .element.large,
-.variable-sizes .element.large.width2.height2 {
-  font-size: 3.0em;
-  width: 350px;
-  height: 350px;
-  z-index: 100;
-}
+
 
 .clickable .element:hover {
   cursor: pointer;
 }
 
-.clickable .element:hover h3 {
+/*.clickable .element:hover h3 {
   text-shadow:
     0 0 10px white,
     0 0 10px white
   ;
-}
+}*/
 
 .clickable .element:hover h2 {
   color: white;
