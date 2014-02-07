@@ -14,10 +14,29 @@
           <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
           <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
         <![endif]-->
-    </head>
-    <body>
+		
+		<!-- Load Google Maps API -->
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBsZjZuLpDatbiu7d_My1vMru0IFyoTcts&sensor=false"></script>
+		
+		<script type="text/javascript">
+			function initialize(){
+				var mapOptions = {
+					center: new google.maps.LatLng(21.4667, -157.9833),
+					zoom: 10
+				};
+				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<style type="text/css">
+		  html { height: 100% }
+		  body { height: 100%; margin: 0; padding: 100px }
+		  #map-canvas { height: 100% }
+		</style>
+	</head>
     
-     <!-- Responsive navbar -->
+<body>
+  <!-- Responsive navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -44,12 +63,7 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
  
- <div id="container"> <!--Main container for all the element-->     
-          
-    <p>Hello Map</p>
-    
-  </div> <!-- #container -->
-  
+	<div id="map-canvas"/>
   
       <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
       <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
