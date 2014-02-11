@@ -1,3 +1,12 @@
+.header {
+  background-image: url('../images/rg_photo.png');
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
 	padding-top: 70px; /* Move body of page below navbar. */
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
