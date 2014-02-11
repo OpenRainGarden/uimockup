@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Rain Garden</title>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/abril-fatface:n4:default;aguafina-script:n4:default.js" type="text/javascript"></script>
@@ -175,7 +175,7 @@ h2.garden_infor {
                 flourishing ever since it was built.</p>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="position: relative; bottom: 1.9em;">
-              <ul class="list-group" style="text-align:center;">
+              <ul class="list-group" style="text-align: center;">
                 <li class="list-group-item">Owner: Diana T.</li>
                 <li class="list-group-item">Type: Residential</li>
                 <li class="list-group-item">Size: 200 sq. ft.</li>
@@ -185,26 +185,31 @@ h2.garden_infor {
           <div class="row" style="color: black; font-size: 14px; letter-spacing: 3px; padding-left: 1em;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative; bottom: 1.9em;">
               <div class="page-header">Plants</div>
-              <button type="button" id="example" class="btn btn-default" data-container="body" data-toggle="popover"
-                data-placement="right" title="'Akulikuli">'Akulikuli</button>
-              <!-- Popover content -->
-              <div id="popover-content" style="display: none">
-                <ul style="list-style:none;">
-                  <li style="text-align:left;">Scientific Name: </li>
-                  <li>Species: </li>
-                  <li>Breed: </li>
-                  <br />
-                  <li><a href="about:blank" target="tab">More Information</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="position: relative; bottom: 1.9em;">
-              <div id='location-canvas' style='width: 100%; height: 300px;'></div>
-            </div>
+              <button type="button" class="btn btn-default example" data-container="body" data-toggle="popover"
+                data-placement="right" title="'Akulikuli"
+                data-content="                <p>Scientific Name: Sessuvium portulacastrum</p>
+                <p>Placement: Inlet</p>
+                <p>Growth: Ground Cover</p>
+                <br />
+                <a href=&#34;about:blank&#34; target=&#34;tab&#34;>More Information</a>">'Akulikuli
+              </button>
+            <button type="button" class="btn btn-default example" data-container="body" data-toggle="popover"
+              data-placement="right" title="Kupukupu"
+              data-content="                <p>Scientific Name: Sessuvium portulacastrum</p>
+                <p>Placement: Inlet</p>
+                <p>Growth: Ground Cover</p>
+                <br />
+                <a href=&#34;about:blank&#34; target=&#34;tab&#34;>More Information</a>">Kupukupu
+            </button>
+              
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="position: relative; bottom: 1.9em;">
+            <div id='location-canvas' style='width: 100%; height: 300px;'></div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -290,11 +295,7 @@ h2.garden_infor {
     </script>
   <script type="text/javascript">
 $(document).ready(function(){
-	$('#example').popover({html : true, 
-		  content: function() {
-        return $('#popover-content').html();
-      }
-	});
+	$('.example').popover({html : true});
 });
 </script>
 </body>
