@@ -142,11 +142,17 @@ h2.garden_infor {
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a class="navloginout" href="./login.html">Login</a></li>
+        </ul>
       </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" style="padding-top: 25px;">
+    <ul class="nav nav-tabs pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Messages</a></li>
+    </ul>
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="panel panel-default">
@@ -162,7 +168,7 @@ h2.garden_infor {
                 Untitled Rain Garden</h3>
             </div>
           </div>
-          <div class="row" style="color: black; font-size: 14px; letter-spacing: 3px;">
+          <div class="row" style="color: black; font-size: 14px; letter-spacing: 3px; padding-left: 1em;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative; bottom: 1.9em;">
               <p>This is a rain garden located in Hawaii. It features many locally grown Hawaiian plants. Because of
                 its location on the Windward side of the island of O'ahu, this rain garden's plants have been
@@ -176,11 +182,21 @@ h2.garden_infor {
               </ul>
             </div>
           </div>
-          <div class="row" style="color: black; font-size: 14px; letter-spacing: 3px;">
+          <div class="row" style="color: black; font-size: 14px; letter-spacing: 3px; padding-left: 1em;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative; bottom: 1.9em;">
               <div class="page-header">Plants</div>
-              <button type="button" class="btn btn-default example" data-container="body" data-toggle="popover"
-                data-placement="left" title="'Akulikuli" data-content="Scientific Name: Sesuvium portulacastrum">'Akulikuli</button>
+              <button type="button" id="example" class="btn btn-default" data-container="body" data-toggle="popover"
+                data-placement="right" title="'Akulikuli">'Akulikuli</button>
+              <!-- Popover content -->
+              <div id="popover-content" style="display: none">
+                <ul style="list-style:none;">
+                  <li style="text-align:left;">Scientific Name: </li>
+                  <li>Species: </li>
+                  <li>Breed: </li>
+                  <br />
+                  <li><a href="about:blank" target="tab">More Information</a></li>
+                </ul>
+              </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="position: relative; bottom: 1.9em; left: 3.0em;">
               <div id='location-canvas' style='width: 100%; height: 300px;'></div>
@@ -189,17 +205,18 @@ h2.garden_infor {
         </div>
       </div>
     </div>
+  </div>
 
 
 
 
-    <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBsZjZuLpDatbiu7d_My1vMru0IFyoTcts&sensor=false"></script>
+  <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBsZjZuLpDatbiu7d_My1vMru0IFyoTcts&sensor=false"></script>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
 			var oahu = new google.maps.LatLng(21.4667, -157.9833);
 			var marker;
 			var map;
@@ -250,7 +267,7 @@ h2.garden_infor {
 			google.maps.event.addDomListener(window, 'load', initialize);
 	  </script>
 
-    <script>
+  <script>
     function initialize() {
     	   var mapOptions = {
     	           zoom: 9,
@@ -271,11 +288,13 @@ h2.garden_infor {
     	google.maps.event.addDomListener(window, 'resize', initialize);
     	google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    <script type="text/javascript">
+  <script type="text/javascript">
 $(document).ready(function(){
-    $(".example").popover({
-        placement : 'top'
-    });
+	$('#example').popover({html : true, 
+		  content: function() {
+        return $('#popover-content').html();
+      }
+	});
 });
 </script>
 </body>
