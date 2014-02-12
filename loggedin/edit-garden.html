@@ -51,80 +51,153 @@ body {
           <li><a href="../education.html">Education</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">dt@gmail.com<b
-              class="caret"></b></a>
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">dt@gmail.com<b class="caret"></b></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="view-garden.html">View My Garden</a></li>
-              <li><a href="#">Edit My Garden</a></li>
-              <li><a href="#">Edit My Profile</a></li>
+              <li><a href="edit-garden.html">Edit My Garden</a></li>
+              <li><a href="edit-profile.html">Edit My Profile</a></li>
             </ul></li>
-
-          <li><a class="navloginout" href="./index.html">Logout&nbsp;</a></li>
+        
+          <li><a class="navloginout" href="../index.html">Logout&nbsp;</a></li>
         </ul>
       </div>
     </div>
   </div>
-
   <div class="container" style="padding-top: 25px;">
+    <div class="row">
+     <div class="col-md-12">
     <ul class="nav nav-tabs pull-right">
       <li><a href="view-garden.html">Home</a></li>
       <li class="active"><a href="#">Edit</a></li>
     </ul>
+    </div>
+    </div>
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="panel panel-default">
-          <div class="row">
-            <div class="col-md-12">
-              <img src="../public/images/gardens/big.JPG" class="img-responsive center-block" style="width: 100%;" />
+      <!-- Form -->
+      <div class="well col-md-12" style="color: black;">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h3
-                style="position: relative; bottom: 1.9em; background-color: rgba(0, 0, 0, 0.5); width: 100%; color: white;">
-                Untitled Rain Garden</h3>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Email">
             </div>
           </div>
-          <div class="row" style="color: black; font-size: 14px; letter-spacing: 0.1em; padding-left: 1em;">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative; bottom: 1.9em;">
-              <p>This is a rain garden located in Hawaii. It features many locally grown Hawaiian plants. Because of
-                its location on the Windward side of the island of O'ahu, this rain garden's plants have been
-                flourishing ever since it was built.</p>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="position: relative; bottom: 1.9em;">
-              <ul class="list-group" style="text-align: center;">
-                <li class="list-group-item">Owner: Diana T.</li>
-                <li class="list-group-item">Type: Residential</li>
-                <li class="list-group-item">Size: 200 sq. ft.</li>
-              </ul>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Telephone</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Telephone">
             </div>
           </div>
-          <div class="row" style="color: black; font-size: 14px; letter-spacing: 3px; padding-left: 1em;">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative; bottom: 1.9em;">
-              <div class="page-header">Plants</div>
-              <button type="button" class="btn btn-default example" data-container="body" data-toggle="popover"
-                data-placement="right" title="&#8216;&#256;kulikuli"
-                data-content="                <p>Scientific Name: Sessuvium portulacastrum</p>
-                <p>Placement: Inlet</p>
-                <p>Growth: Ground Cover</p>
-                <br />
-                <a href=&#34;http://nativeplants.hawaii.edu/plant/view/Sesuvium_portulacastrum&#34; target=&#34;tab&#34;>More Information</a>">&#8216;&#256;kulikuli
-              </button>
-              <button type="button" class="btn btn-default example" data-container="body" data-toggle="popover"
-                data-placement="right" title="Kupukupu"
-                data-content="                <p>Scientific Name: Sessuvium portulacastrum</p>
-                <p>Placement: Inlet</p>
-                <p>Growth: Ground Cover</p>
-                <br />
-                <a href=&#34;http://nativeplants.hawaii.edu/plant/view/Nephrolepis_cordifolia&#34; target=&#34;tab&#34;>More Information</a>">Kupukupu
-              </button>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Address</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Address">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Address</label>
+            <div class="col-sm-10">
+              <select class="form-control">
+                <option>Please Select the Property type</option>
+                <option>Residential</option>
+                <option>Business</option>
+                <option>Public Land</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" rows="5" placeholder="Description"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Photo URL</label>
+            <div class="col-sm-10">
+              <input class="form-control" placeholder="URL of Rain Garden Photo">
+              </textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Square Footage of Impervious Material
+              Being Treated</label>
+            <div class="col-sm-10" style="padding-top: 20px;">
+              <input type="password" class="form-control" id="inputPassword3"
+                placeholder="Square Footage of Impervious Material Being Treated">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Square Footage of Rain Garden</label>
+            <div class="col-sm-10" style="padding-top: 10px;">
+              <input type="password" class="form-control" id="inputPassword3"
+                placeholder="Square Footage of Rain Garden">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Downspouts Disconnected</label>
+            <div class="col-sm-10" style="padding-top: 10px;">
+              <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">
+                Yes
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option2">
+                No
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Soil Amended to Increase Permubility</label>
+            <div class="col-sm-10" style="padding-top: 10px;">
+              <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">
+                Yes
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option2">
+                No
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Material Used for Soil Amendement</label>
+            <div class="col-sm-10" style="padding-top: 10px;">
+              <input type="password" class="form-control" id="inputPassword3"
+                placeholder="Material Used for Soil Amendement">
+            </div>
+          </div>
 
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="position: relative; bottom: 1.9em;">
-              <div id='location-canvas' style='width: 100%; height: 300px;'></div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Plants Used</label>
+            <div class="col-sm-10">
+              <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;Ahu&#8216;awa
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;&#256;kia
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;&#256;kulikuli
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option2">Carex
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;Ilie&#8216;e
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">Koki&#8216;o
+                ke&#8216;oke&#8216;o
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">Ko&#8216;oko&#8216;olau
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">Kupukupu
+              </label>
             </div>
           </div>
+
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Make Rain Garden Information Public</label>
+            <div class="col-sm-10" style="padding-top: 10px;">
+              <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">
+                Yes
+              </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option2">
+                No
+              </label>
+            </div>
+          </div>
+        </form>
+        <div class="col-sm-offset-2 col-sm-10">
+          <a href="view-garden.html"><button type="submit" class="btn btn-default">Register</button></a>
         </div>
       </div>
     </div>
