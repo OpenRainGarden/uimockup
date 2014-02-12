@@ -1,7 +1,8 @@
 body {
 	padding-top: 70px; /* Move body of page below navbar. */
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Arial, sans-serif;
+/*	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Arial, sans-serif;*/
+	font-family: "Open Sans",sans-serif;
 	font-size: 13px;
 	background: #ffffff !important;
 	color: #FFF;
