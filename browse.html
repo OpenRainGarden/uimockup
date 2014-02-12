@@ -36,7 +36,7 @@
 				map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 				
 				<!-- Create string for info window -->
-				var infoString = '<p>Hello Info Window</p>';
+				var infoString = '<div><a href="#">Garden 1</a></div><img src="./public/images/gardens/1.jpg" height="100px" width="100px"/>';
 				
 				<!-- Create info window -->
 				var infoWindow = new google.maps.InfoWindow({
@@ -84,7 +84,7 @@
 				<!--width: 100%; -->
 				<!--height: 100%; -->
 				width: 300px;
-				height: 600px;
+				height: 1000px;
 			}
 		</style>
 	</head>
@@ -102,7 +102,7 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-		  <li><a href="#">Home</a></li>
+		  <li><a href="./home.html">Home</a></li>
 		  <li><a href="./register.html">Register</a></li>
           <li><a href="./browse.html">Browse Gardens</a></li>
           <li><a href="./education.html">Education</a></li>
