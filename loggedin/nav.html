@@ -13,8 +13,8 @@
 <body>
 
 
-<!-- before logged in Responsive navbar -->
-<div id="globalnav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<!-- logged in Responsive navbar -->
+  <div id="loginnav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -31,11 +31,19 @@
           <li><a href="./map.html">Map</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a class="navloginout" href="./login.html">Login</a></li>
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">dt@gmail.com<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="view-garden.html">View My Garden</a></li>
+              <li><a href="edit-garden.html">Edit My Garden</a></li>
+              <li><a href="edit-profile.html">Edit My Profile</a></li>
+            </ul></li>
+        
+          <li><a class="navloginout" href="../index.html">Logout&nbsp;</a></li>
         </ul>
       </div>
     </div>
-</div><!-- end of #globalnav-->
+  </div><!-- end of #globalnav-->
 
 
 

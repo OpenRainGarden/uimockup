@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        
+        <!--  Load site-specific customizations after bootstrap. -->
+        <link rel="stylesheet" type="text/css" href="./public/stylesheets/main.css">
+        <link rel="stylesheet" type="text/css" href="./public/stylesheets/element.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <![endif]-->
+		
+		<!-- Load Google Maps API -->
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBsZjZuLpDatbiu7d_My1vMru0IFyoTcts&sensor=false"></script>
+		
+		<script type="text/javascript">
+			var oahu = new google.maps.LatLng(21.4667, -157.9833);
+			var marker;
+			var map;
+			
+			<!-- Initializes Google Maps -->
+			function initialize() {
+				<!-- Set mapOptions -->
+				var mapOptions = {
+					center: oahu,
+					zoom: 11,
+					mapTypeId: google.maps.MapTypeId.HYBRID
+				};
+				<!-- Create Google Map -->
+				map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+				
+				<!-- Create string for info window -->
+				var infoString = '<p>Hello Info Window</p>';
+				
+				<!-- Create info window -->
+				var infoWindow = new google.maps.InfoWindow({
+					content: infoString
+				});
+				
+				<!-- Create a marker -->
+				marker = new google.maps.Marker({
+					title: 'Test Marker',
+					map: map,
+					animation: google.maps.Animation.DROP,
+					position: oahu
+				});
+				
+				<!-- Add listeners to marker -->
+				<!-- google.maps.event.addListener(marker, 'click', toggleBounce); -->
+				google.maps.event.addListener(marker, 'click', function() {infoWindow.open(map,marker);});
+			}
+			
+			<!-- Toggles bounce animation on marker (on click) -->
+			function toggleBounce() {
+				if (marker.getAnimation() != null) {
+					marker.setAnimation(null);
+				}
+				else {
+					marker.setAnimation(google.maps.Animation.BOUNCE);
+				}
+			}
+			
+			<!-- Initialize Google Maps on page load -->
+			google.maps.event.addDomListener(window, 'load', initialize);
+			google.maps.event.addDomListener(window, 'resize', initialize);
+		</script>
+		
+		<style type="text/css">
+		  html { height: 100% }
+		  body {padding: 60px; color: black }
+		  #map-canvas { width: 100%; height: 100%}
+		</style>
+	</head>
+    
+<body>
+    <!-- Responsive navbar==================================================-->
+    <div class="mynavbar"></div>
+
+	<!-- end of Responsive navbar==========================================-->
+    
+  
+	<!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+	
+	<div class="container" id="map-canvas"/>
+    
+  
+      <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
+      <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>   
+      <!-- append the nav content with js-->
+	  <script type="text/javascript">
+            //when page has loaded
+            $(document).ready(function() {
+                $('.mynavbar').load("./navbar.html #globalnav");
+            });//end document ready
+    
+       </script>  
+    </body>
+</html>
