@@ -34,18 +34,23 @@ body {
 </head>
 <body>
 
-  	<!-- Responsive navbar==================================================-->
-    <div class="mynavbar"></div>
+  <!-- Responsive navbar==================================================-->
+  <div class="mynavbar"></div>
 
-	<!-- end of Responsive navbar==========================================-->
+  <!-- end of Responsive navbar==========================================-->
 
   <div class="container" style="padding-top: 25px;">
-    <ul class="nav nav-tabs pull-right">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="edit-garden.html">Edit</a></li>
-    </ul>
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-xs-10">
+        <ul class="nav nav-tabs pull-right">
+          <li class="active"><a href="#">View</a></li>
+          <li><a href="edit-garden-detail.html">Edit Information</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-xs-10">
         <div class="panel panel-default">
           <div class="row">
             <div class="col-md-12">
@@ -67,12 +72,14 @@ body {
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="position: relative; bottom: 1.9em;">
               <ul class="list-group" style="text-align: center;">
-                <li class="list-group-item">Owner: 
-                
-                <button type="button" class="btn btn-link example" data-container="body" data-toggle="popover"
+                <li class="list-group-item">Owner:
+
+                  <button type="button" class="btn btn-link example" data-container="body" data-toggle="popover"
                     data-placement="left" title="Contact Information"
                     data-content="                <p>Email: dt@gmail.com</p>
-              <p>Phone Number: 123-4567</p>">Diana T.</button></li>
+              <p>Phone Number: 123-4567</p>">Diana
+                    T.</button>
+                </li>
                 <li class="list-group-item">Type: Residential</li>
                 <li class="list-group-item">Size: 200 sq. ft.</li>
               </ul>
@@ -192,7 +199,7 @@ $(document).ready(function(){
 	$('.example').popover({html : true});
 });
 </script>
- <script type="text/javascript">
+  <script type="text/javascript">
     	//when page has loaded
 		$(document).ready(function() {
 			$('.mynavbar').load("./nav.html #loginnav");
