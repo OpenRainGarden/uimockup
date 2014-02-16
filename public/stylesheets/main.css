@@ -1,3 +1,7 @@
+.profile-item {
+	margin: 1em;
+}
+
 body {
 	padding-top: 70px; /* Move body of page below navbar. */
 /*	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
