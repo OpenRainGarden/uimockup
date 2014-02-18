@@ -34,7 +34,7 @@
           <!-- Modal -->
           <div class=" modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
             aria-hidden="true" style="color:black;">
-            <div class="modal-dialog" style="color:black;">
+            <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -56,14 +56,14 @@
         <div class="panel panel-default" style="color: black;">
           <div class="panel-heading">
             <h3 class="panel-title">
-              Comments <span class="badge badge-default">0</span>
+              Comments <span class="badge badge-default">2</span>
             </h3>
           </div>
           <div class="panel-body">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <!-- Comments Start -->
-                <div class="alert alert-info">This page has no comments. Be the first to comment now!</div>
+                <div class="alert alert-info">This page has no comments. Be the first to comment!</div>
                 <hr />
                 <!-- Button trigger modal -->
                 <button class="btn btn-default pull-right" data-toggle="modal" data-target="#postComment">Post
@@ -73,19 +73,13 @@
                 <div class="modal fade" id="postComment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div class="modal-content" style="color:black;">
                       <form class="form-horizontal">
                         <div class="modal-header">
                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                           <h4 class="modal-title" id="myModalLabel">Comment on BMP</h4>
                         </div>
                         <div class="modal-body">
-                          <div class="form-group">
-                            <label class="col-sm-2 control-label">Quote Text</label>
-                            <div class="col-sm-10">
-                              <p class="form-control-static">Garden is working great!</p>
-                            </div>
-                          </div>
                           <div class="form-group">
                             <div class="col-md-12">
                               <textarea row="5" class="form-control" id="comment-user" placeholder="Comment Here"></textarea>
@@ -108,6 +102,8 @@
       </div>
     </div>
   </div>
+  
+  
 
 
   <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
@@ -115,24 +111,25 @@
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script src="../public/js/holder.js"></script>
   <script type="text/javascript">
-			//when page has loaded
-			$(document).ready(function() {
-				$('.mynavbar').load("./nav.html #loginnav");
-			});//end document ready
-		</script>
+      //when page has loaded
+      $(document).ready(function() {
+        $('.mynavbar').load("./nav.html #loginnav");
+      });//end document ready
+    </script>
   <script>
-			function OpenModal() {
-				$('#myModal').modal({
-					show : true
-				});
-			};
-		</script>
+      function OpenModal() {
+        $('#myModal').modal({
+          show : true
+        });
+      };
+    </script>
   <script>
-			function OpenReply() {
-				$('#postComment').modal({
-					show : true
-				});
-			};
-		</script>
+      function OpenReply() {
+        $('#postReply').modal({
+          show : true
+        });
+      };
+    </script>
+    
 </body>
 </html>

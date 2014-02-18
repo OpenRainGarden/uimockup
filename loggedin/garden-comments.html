@@ -79,7 +79,7 @@
                     </a>
                     <div class="media-body">
                       <h4 class="media-heading">
-                        Eduard G. <a href="#" onclick="javascript:OpenReply();"><span
+                        Eduard G. <a href="#" onclick="javascript:OpenReply2();"><span
                           class="glyphicon glyphicon-comment pull-right reply"></span></a>
                       </h4>
                       <div class="panel panel-default">
@@ -100,19 +100,13 @@
                 <div class="modal fade" id="postComment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div class="modal-content" style="color:black;">
                       <form class="form-horizontal">
                         <div class="modal-header">
                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                           <h4 class="modal-title" id="myModalLabel">Comment on BMP</h4>
                         </div>
                         <div class="modal-body">
-                          <div class="form-group">
-                            <label class="col-sm-2 control-label">Quote Text</label>
-                            <div class="col-sm-10">
-                              <p class="form-control-static">Garden is working great!</p>
-                            </div>
-                          </div>
                           <div class="form-group">
                             <div class="col-md-12">
                               <textarea row="5" class="form-control" id="comment-user" placeholder="Comment Here"></textarea>
@@ -135,7 +129,72 @@
       </div>
     </div>
   </div>
+  
+               <!-- Modal -->
+                <div class="modal fade" id="postReply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="color:black;">
+                      <form class="form-horizontal">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title" id="myModalLabel">Reply to Comment</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Quote Text</label>
+                            <div class="col-sm-10">
+                              <p class="form-control-static"><blockquote>Garden is working great!</blockquote></p>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-md-12">
+                              <textarea row="5" class="form-control" id="comment-user" placeholder="Reply Here"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <a href="garden-comments.html"><button type="button" class="btn btn-primary">Post
+                              Comment</button></a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
 
+               <!-- Modal -->
+                <div class="modal fade" id="postReply2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="color:black;">
+                      <form class="form-horizontal">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title" id="myModalLabel">Reply to Comment</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label">Quote Text</label>
+                            <div class="col-sm-10">
+                              <p class="form-control-static"><blockquote>Garden looks nice! Which plants would you recommend for a somewhat wet area?</blockquote></p>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-md-12">
+                              <textarea row="5" class="form-control" id="comment-user" placeholder="Reply Here"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <a href="garden-comments.html"><button type="button" class="btn btn-primary">Post
+                              Comment</button></a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
 
   <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
   <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -156,10 +215,19 @@
 		</script>
   <script>
 			function OpenReply() {
-				$('#postComment').modal({
+				$('#postReply').modal({
 					show : true
 				});
 			};
 		</script>
+    
+      <script>
+      function OpenReply2() {
+        $('#postReply2').modal({
+          show : true
+        });
+      };
+    </script>
+    
 </body>
 </html>
