@@ -1,3 +1,11 @@
+.reply {
+	color:white;
+}
+
+.reply:hover {
+  color:#94A779;
+}
+
 .media-heading {
 background-color: #3E60AD;
 color:white;
