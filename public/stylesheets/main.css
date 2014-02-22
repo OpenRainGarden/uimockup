@@ -1,3 +1,18 @@
+.bmp-select img {
+  opacity:0.4;
+  filter:alpha(opacity=40); /* For IE8 and earlier */
+  transition: 0.5s;
+  width: 200px;
+  height:200px;
+}
+
+.bmp-select img:hover {
+  opacity:1.0;
+  filter:alpha(opacity=100); /* For IE8 and earlier */
+    width: 375px;
+  height:375px;
+}
+
 .form-control-static {
 	padding-left:0.7em;
 }
