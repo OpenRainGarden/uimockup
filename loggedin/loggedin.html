@@ -1,250 +1,289 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-
-<title>index</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-
-<!--  Load site-specific customizations after bootstrap. -->
-<link rel="stylesheet" type="text/css" href="../public/stylesheets/main.css">
-<link rel="shortcut icon" type="image/png" href=".././public/images/logo_nobackground.png">
-<style>
-body {
-  padding-top: 0px;
-
-  font-family:font-family: "Open Sans",sans-serif;;
-}
-.featurette-heading{
-	font-size: 36px;
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
-	font-weight: bold;
-}
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-}
-
-
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-.navbar-wrapper .navbar {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.navbar-wrapper img{
-	height: 50px;
-}
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
-
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 60px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-
-
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-left:  15px;
-    padding-right: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-left:  0;
-    padding-right: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
-
-</style>
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
+    <head>
+        <title>gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        
+        <!--  Load site-specific customizations after bootstrap. -->
+        <link rel="stylesheet" type="text/css" href=".././public/stylesheets/main.css">
+        <link rel="stylesheet" type="text/css" href=".././public/stylesheets/element.css">
+        <link rel="shortcut icon" type="image/png" href=".././public/images/logo_nobackground.png">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
           <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
           <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
         <![endif]-->
-</head>
-<body>
+      
 
- 	<!-- Responsive navbar==================================================-->
+
+    </head>
+    <body>
+    
+    <!-- Responsive navbar==================================================-->
     <div class="mynavbar"></div>
 
 	<!-- end of Responsive navbar==========================================-->
-  
+    
 
-   <!-- Marketing messaging and featurettes
+  
+	<!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+ 
+ <div id="container"> <!--Main container for all the element-->    
+ 
+	 <!--element start-------------------------------------------------------------->    
+     <a href="view-garden.html">    
+        <div class="element">
+          <div class="story">
+                <div class="thumbs-hovering">
+                		<div>View details &raquo;</div>
+                        <h2>Rain Chain</h2>
+                        <p>This is a rainchain that hangs on the roof. It routes the water down to the small fish pond. It is beautiful and easy way to manage the rain water.</p> 
+                </div>
+                <div class= "postthumb"
+                	 style="background-image:		     
+                     url(../public/images/gardens/susan.png)" >
+                </div>
+           </div><!-- /.story -->
+        </div><!-- /.element -->
+      </a> <!--/.a link warper for element-->
+      <!--element end--------------------------------------------------------------> 
+      <!--element start-------------------------------------------------------------->    
+     <a href="view-garden.html">    
+        <div class="element">
+          <div class="story">
+                <div class="thumbs-hovering">
+                		<div>View details &raquo;</div>
+                        <h2>Rain Garden</h2>
+                        <p>The raingarden treats stormwater from the adjacent streets and business area before flows discharge at the town's main swimming beach. </p> 
+                </div>
+                <div class= "postthumb"
+                	 style="background-image:		     
+                     url(../public/images/gardens/cuffin.png)" >
+                </div>
+           </div><!-- /.story -->
+        </div><!-- /.element -->
+      </a> <!--/.a link warper for element-->
+      <!--element end--------------------------------------------------------------> 
+      <!--element start-------------------------------------------------------------->    
+     <a href="view-garden.html">    
+        <div class="element">
+          <div class="story">
+                <div class="thumbs-hovering">
+                		<div>View details &raquo;</div>
+                        <h2>Permeable Pavers</h2>
+                        <p>Permeable pavements are alternative paving surfaces that allow stormwater runoff to filter 
+through voids in the pavement surface into an underlying stone reservoir, where it is temporarily 
+stored and/or infiltrated.</p> 
+                </div>
+                <div class= "postthumb"
+                	 style="background-image:		     
+                     url(../public/images/gardens/paver.png)" >
+                </div>
+           </div><!-- /.story -->
+        </div><!-- /.element -->
+      </a> <!--/.a link warper for element-->
+      <!--element end--------------------------------------------------------------> 
+       <!--element start-------------------------------------------------------------->    
+      <a href="view-garden.html">    
+        <div class="element">
+          <div class="story">
+                <div class="thumbs-hovering">
+                		<div>View details &raquo;</div>
+                        <h2>Rain Barrel</h2>
+                        <p>Rainwater tanks are installed to make use of rain water for later use, reduce mains water use for economic or environmental reasons, and aid self-sufficiency.</p> 
+                </div>
+                <div class= "postthumb"
+                	 style="background-image:		     
+                     url(../public/images/gardens/barrel.png)" >
+                </div>
+           </div><!-- /.story -->
+        </div><!-- /.element -->
+      </a> <!--/.a link warper for element-->
+      <!--element end--------------------------------------------------------------> 
+      
 
-    <div class="container">
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Rain Gardens is a beautiful solutions for water pollution.</h2><br>
-          <p class="lead">The resulting stormwater runoff washes pollution into our streams, rivers and lakes,  but it doesn't have to work this way.
-            <a class="btn btn-default" href="http://www.huihawaii.org/rain-gardens.html" role="button">Learn more</a>
-           </p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive"  alt="500x500" src="../public/images/WaterPollution.jpg">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-         	<img class="featurette-image img-responsive"  alt="500x500" src="../public/images/flower.png">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">It is simple as 123 to build a rain garden.</h2>
-          <p class="lead">A rain garden is a special kind of garden designed to collect and absorb runoff from a roof or parking lot.  It is easy to plant a rain garden and you can help reduce water pollution in your community! <a class="btn btn-default" href="./register.html" role="button">Join us</a> to learn more about it</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Share your rain garden<span class="text-muted"></span></h2>
-          <p class="lead">If you want to share your beatiful rain garden to everyone in the community,  <a class="btn btn-default" href="./signup.html" role="button">sign up</a> today and post your rain garden pictures</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive"  alt="500x500" src="../public/images/share.png">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="http://getbootstrap.com/examples/carousel/#">Back to top</a></p>
-        <p>2014 <a href="http://getbootstrap.com/examples/carousel/#">Privacy</a>  <a href="http://getbootstrap.com/examples/carousel/#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-
-
-  <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
-  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  <script src="./public/js/holder.js"></script>
-  <script type="text/javascript">
+ 
+     
+          
+    
+    
+  </div> <!-- #container -->
+  
+  
+      <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
+      <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+      <script src=".././public/javascripts/fluid.min.js"></script>
+	  <script src=".././public/javascripts/element.min.js"></script>
+      <script>
+	  $(function(){
+		
+		var $container = $('#container');
+		
+		
+		  // add randomish size classes
+		  $container.find('.element').each(function(){
+			var $this = $(this),
+				number = parseInt( $this.find('.number').text(), 10 );
+			if ( number % 7 % 2 === 1 ) {
+			  $this.addClass('width2');
+			}
+			if ( number % 3 === 0 ) {
+			  $this.addClass('height2');
+			}
+		  });
+		
+		$container.isotope({
+		  itemSelector : '.element',
+		  masonry : {
+			columnWidth : 0
+		  },
+		  masonryHorizontal : {
+			rowHeight: 240
+		  },
+		  cellsByRow : {
+			columnWidth : 240,
+			rowHeight : 240
+		  },
+		  cellsByColumn : {
+			columnWidth : 240,
+			rowHeight : 240
+		  },
+		  getSortData : {
+			symbol : function( $elem ) {
+			  return $elem.attr('data-symbol');
+			},
+			category : function( $elem ) {
+			  return $elem.attr('data-category');
+			},
+			number : function( $elem ) {
+			  return parseInt( $elem.find('.number').text(), 10 );
+			},
+			weight : function( $elem ) {
+			  return parseFloat( $elem.find('.weight').text().replace( /[\(\)]/g, '') );
+			},
+			name : function ( $elem ) {
+			  return $elem.find('.name').text();
+			}
+		  }
+		});
+		
+		
+		  var $optionSets = $('#options .option-set'),
+			  $optionLinks = $optionSets.find('a');
+	
+		  $optionLinks.click(function(){
+			var $this = $(this);
+			// don't proceed if already selected
+			if ( $this.hasClass('selected') ) {
+			  return false;
+			}
+			var $optionSet = $this.parents('.option-set');
+			$optionSet.find('.selected').removeClass('selected');
+			$this.addClass('selected');
+	  
+			// make option object dynamically, i.e. { filter: '.my-filter-class' }
+			var options = {},
+				key = $optionSet.attr('data-option-key'),
+				value = $this.attr('data-option-value');
+			// parse 'false' as false boolean
+			value = value === 'false' ? false : value;
+			options[ key ] = value;
+			if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+			  // changes in layout modes need extra logic
+			  changeLayoutMode( $this, options )
+			} else {
+			  // otherwise, apply new options
+			  $container.isotope( options );
+			}
+			
+			return false;
+		  });
+	
+	
+		
+		  // change layout
+		  var isHorizontal = false;
+		  function changeLayoutMode( $link, options ) {
+			var wasHorizontal = isHorizontal;
+			isHorizontal = $link.hasClass('horizontal');
+	
+			if ( wasHorizontal !== isHorizontal ) {
+			  // orientation change
+			  // need to do some clean up for transitions and sizes
+			  var style = isHorizontal ? 
+				{ height: '80%', width: $container.width() } : 
+				{ width: 'auto' };
+			  // stop any animation on container height / width
+			  $container.filter(':animated').stop();
+			  // disable transition, apply revised style
+			  $container.addClass('no-transition').css( style );
+			  setTimeout(function(){
+				$container.removeClass('no-transition').isotope( options );
+			  }, 100 )
+			} else {
+			  $container.isotope( options );
+			}
+		  }
+	
+	
+		
+		  // change size of clicked element
+		  $container.delegate( '.element', 'click', function(){
+			$(this).toggleClass('large');
+			$container.isotope('reLayout');
+		  });
+	
+		  // toggle variable sizes of all elements
+		  $('#toggle-sizes').find('a').click(function(){
+			$container
+			  .toggleClass('variable-sizes')
+			  .isotope('reLayout');
+			return false;
+		  });
+	
+	
+		
+		  $('#insert a').click(function(){
+			var $newEls = $( fakeElement.getGroup() );
+			$container.isotope( 'insert', $newEls );
+	
+			return false;
+		  });
+	
+		  $('#append a').click(function(){
+			var $newEls = $( fakeElement.getGroup() );
+			$container.append( $newEls ).isotope( 'appended', $newEls );
+	
+			return false;
+		  });
+	
+	
+		var $sortBy = $('#sort-by');
+		$('#shuffle a').click(function(){
+		  $container.isotope('shuffle');
+		  $sortBy.find('.selected').removeClass('selected');
+		  $sortBy.find('[data-option-value="random"]').addClass('selected');
+		  return false;
+		});
+	
+	
+	  });
+	  </script>
+      
+      
+         <!-- append the nav content with js-->
+		
+         <script type="text/javascript">
     	//when page has loaded
 		$(document).ready(function() {
 			$('.mynavbar').load("./nav.html #loginnav");
 		});//end document ready
 
    </script>
-</body>
+    </body>
 </html>
