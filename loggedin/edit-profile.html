@@ -23,10 +23,17 @@
 
   <!-- end of Responsive navbar==========================================-->
 
-  <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
+  <div class="container">
+     <div class="row">
+         <div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-xs-12">
+    <ul class="nav nav-tabs pull-right">
+      <li><a href="user-profile.html">View</a></li>
+      <li class="active"><a href="edit-profile.html">Edit</a></li>
+    </ul>
+    </div>
+    </div>
       <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading" style="background-color:#3E60AD; color:white;">
           <h3 class="panel-title">Edit Profile</h3>
         </div>
         <div class="panel-body" style="color: black;">
@@ -63,12 +70,11 @@
             </div>
           </form>
           <div class="col-sm-offset-2 col-sm-10">
-            <a href="loggedin.html"><button type="submit" class="btn btn-default">Submit Changes</button></a>
+            <a href="user-profile.html"><button type="submit" class="btn btn-default">Submit Changes</button></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
   <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
   <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
