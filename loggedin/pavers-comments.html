@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Comments</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+<!--  Load site-specific customizations after bootstrap. -->
+<link rel="stylesheet" type="text/css" href="../public/stylesheets/main.css">
+<link rel="shortcut icon" type="image/png" href=".././public/images/logo_nobackground.png">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <![endif]-->
+</head>
+<body>
+
+
+  <!-- Responsive navbar==================================================-->
+  <div class="mynavbar"></div>
+
+  <!-- end of Responsive navbar==========================================-->
+
+
+  <!-- Form -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <ul class="nav nav-tabs pull-right">
+          <li><a href="view-pavers.html">View</a></li>
+          <li class="active"><a href="pavers-comments.html">Comments (0)</span></a></li>          
+          <li><a href="edit-pavers-detail.html">Edit Information</a></li>
+          <li><a href="#" onclick="javascript:OpenModal();">Delete Page</a></li>
+          <!-- Modal -->
+          <div class=" modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true" style="color:black;">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Delete This Page?</h4>
+                </div>
+                <div class="modal-body">This action cannot be undone. Are you sure?</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <a href="loggedin.html"><button type="button" class="btn btn-danger">Delete</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <div class="panel panel-default" style="color: black;">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Comments <span class="badge badge-default">0</span>
+            </h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- Comments Start -->
+                <div class="alert alert-info">This page has no comments. Be the first to comment!</div>
+                <hr />
+                <!-- Button trigger modal -->
+                <button class="btn btn-default pull-right" data-toggle="modal" data-target="#postComment">Post
+                  Comment</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="postComment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="color:black;">
+                      <form class="form-horizontal">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title" id="myModalLabel">Comment on BMP</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <div class="col-md-12">
+                              <textarea row="5" class="form-control" id="comment-user" placeholder="Comment Here"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <a href="garden-comments.html"><button type="button" class="btn btn-primary">Post
+                              Comment</button></a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+  <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="../public/js/holder.js"></script>
+  <script type="text/javascript">
+      //when page has loaded
+      $(document).ready(function() {
+        $('.mynavbar').load("./nav.html #loginnav");
+      });//end document ready
+    </script>
+  <script>
+      function OpenModal() {
+        $('#myModal').modal({
+          show : true
+        });
+      };
+    </script>
+  <script>
+      function OpenReply() {
+        $('#postReply').modal({
+          show : true
+        });
+      };
+    </script>
+    
+</body>
+</html>
