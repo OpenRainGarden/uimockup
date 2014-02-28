@@ -1,3 +1,12 @@
+.date-info {
+	font-size:.75em;
+	color:white;
+}
+
+.media-body {
+	font-size:1.25em;
+}
+
 .bmp-select img {
   opacity:0.5;
   filter:alpha(opacity=50); /* For IE8 and earlier */
