@@ -83,29 +83,34 @@ body {
                 Untitled Rain Garden</h3>
             </div>
           </div>
-          <div class="row" style="color: black; font-size: 14px; letter-spacing: 0.1em; padding-left: 1em;">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative; bottom: 1.9em;">
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12" style="position: relative; letter-spacing: 0.1em; bottom: 1.9em;">
+              <ul class="list-group" style="text-align: center;">
+                <li class="list-group-item">Owner: <a href="user-profile.html">Susan C.</a></li>
+                <li class="list-group-item">Type: Rain Garden</li>
+                <li class="list-group-item">Property Type: Residential</li>
+                <li class="list-group-item">Address: 564 Keola St.</li>                
+                <li class="list-group-item">Date Added: 4/5/2013</li>
+                <li class="list-group-item">Number of Garden(s): 1</li>
+              </ul>
+            </div>
+          <div class="row" style="color: black; font-size: 14px; letter-spacing: 0.1em; padding-left: 1em; padding-right:1em;">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="position: relative; bottom: 1.9em;">
               <p>This is a rain garden located in Hawaii. It features many locally grown Hawaiian plants. Because of
                 its location on the Windward side of the island of O'ahu, this rain garden's plants have been
                 flourishing ever since it was built.</p>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="position: relative; bottom: 1.9em;">
+            <div class="col-lg-6 col-md-6 hidden-sm hidden-xs" style="position: relative; bottom: 1.9em;">
               <ul class="list-group" style="text-align: center;">
-                <li class="list-group-item">Owner:
-
-                  <button type="button" class="btn btn-link example" data-container="body" data-toggle="popover"
-                    data-placement="left" title="Contact Information"
-                    data-content="                <p>Email: dt@gmail.com</p>
-              <p>Phone Number: 123-4567</p>">Susan
-                    C.</button>
-                </li>
-                <li class="list-group-item">BMP Type: Rain Garden</li>
+                <li class="list-group-item">Owner: <a href="user-profile.html">Susan C.</a></li>
+                <li class="list-group-item">Type: Rain Garden</li>
+                <li class="list-group-item">Property Type: Residential</li>
                 <li class="list-group-item">Date Added: 4/5/2013</li>
+                <li class="list-group-item">Number of Garden(s): 1</li>
               </ul>
             </div>
           </div>
-          <div class="row" style="color: black; font-size: 14px; letter-spacing: 3px; padding-left: 1em;">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: relative; bottom: 1.9em;">
+          <div class="row" style="color: black; font-size: 14px; letter-spacing: 3px; padding: 0 1em 0 1em;">
+            <div class="col-lg-12" style="position: relative; bottom: 1.9em;">
               <div class="page-header">Plants</div>
               <button type="button" class="btn btn-default example" data-container="body" data-toggle="popover"
                 data-placement="right" title="&#8216;&#256;kulikuli"
@@ -138,81 +143,6 @@ body {
 
 
   <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
-  <script type="text/javascript"
-    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBsZjZuLpDatbiu7d_My1vMru0IFyoTcts&sensor=false"></script>
-
-  <script type="text/javascript">
-			var oahu = new google.maps.LatLng(21.4667, -157.9833);
-			var marker;
-			var map;
-			
-			<!-- Initializes Google Maps -->
-			function initialize() {
-				<!-- Set mapOptions -->
-				var mapOptions = {
-					center: oahu,
-					zoom: 11,
-					mapTypeId: google.maps.MapTypeId.HYBRID
-				};
-				<!-- Create Google Map -->
-				map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-				
-				<!-- Create string for info window -->
-				var infoString = '<p>ICS414 Rain Garden</p>';
-				
-				<!-- Create info window -->
-				var infoWindow = new google.maps.InfoWindow({
-					content: infoString
-				});
-				
-				<!-- Create a marker -->
-				marker = new google.maps.Marker({
-					title: 'Test Marker',
-					map: map,
-					animation: google.maps.Animation.DROP,
-					position: oahu
-				});
-				
-				<!-- Add listeners to marker -->
-				<!-- google.maps.event.addListener(marker, 'click', toggleBounce); -->
-				google.maps.event.addListener(marker, 'click', function() {infoWindow.open(map,marker);});
-			}
-			
-			<!-- Toggles bounce animation on marker (on click) -->
-			function toggleBounce() {
-				if (marker.getAnimation() != null) {
-					marker.setAnimation(null);
-				}
-				else {
-					marker.setAnimation(google.maps.Animation.BOUNCE);
-				}
-			}
-			
-			<!-- Initialize Google Maps on page load -->
-			google.maps.event.addDomListener(window, 'load', initialize);
-	  </script>
-
-  <script>
-    function initialize() {
-    	   var mapOptions = {
-    	           zoom: 9,
-    	           center: new google.maps.LatLng(21.3918802, -157.7360041),  
-    	           mapTypeId: google.maps.MapTypeId.TERRAIN
-    	       };
-    	 
-    	   var map = new google.maps.Map(document.getElementById('location-canvas'),
-    	                                   mapOptions);
-    	                              
-    	   var marker = new google.maps.Marker({
-    	                   map: map,
-    	                   draggable: false,
-    	                   position: new google.maps.LatLng(21.3918802, -157.7360041)
-    	       });
-    	}
-    	                        
-    	google.maps.event.addDomListener(window, 'resize', initialize);
-    	google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
   <script type="text/javascript">
 $(document).ready(function(){
 	$('.example').popover({html : true});
