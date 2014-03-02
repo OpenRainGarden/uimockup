@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Register: Rain Garden</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+<!--  Load site-specific customizations after bootstrap. -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.0/css/jasny-bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../public/stylesheets/main.css">
+<link rel="shortcut icon" type="image/png" href=".././public/images/logo_nobackground.png">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <![endif]-->
+</head>
+<body>
+
+
+  <!-- Responsive navbar==================================================-->
+  <div class="mynavbar"></div>
+
+  <!-- end of Responsive navbar==========================================-->
+
+  <!-- Form -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1" style="color: black;">
+        <div class="panel panel-default" style="color: black;">
+          <div class="panel-heading">
+            <h3 class="panel-title">Register Rain Garden</h3>
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Telephone</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Telephone">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Sponsor</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Sponsor">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Rain Garden Address</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="BMP Address">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="5" placeholder="Description"></textarea>
+                </div>
+              </div>
+                            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Plants Used</label>
+                <div class="col-sm-10">
+                  <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;Ahu&#8216;awa
+                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;&#256;kia
+                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;&#256;kulikuli
+                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option2">Carex
+                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;Ilie&#8216;e
+                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">Koki&#8216;o
+                    ke&#8216;oke&#8216;o
+                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">Ko&#8216;oko&#8216;olau
+                  </label><br/> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">Kupukupu
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Photo URL</label>
+                <div class="col-sm-10">
+                  <input type="file" title="Search for a file to add">
+                </div>
+              </div>
+          <div class="form-inline">
+            <label for="inputPassword3" class="col-sm-2 control-label" style="padding-right: 26px;">Date Built</label>
+             <div class="col-sm-10" style="right:10px;">       
+              <input type="text" class="form-control" placeholder="MM" id="month" maxlength="2"> 
+              <input type="text" class="form-control" placeholder="DD" id="day" maxlength="2"> 
+              <input type="text" class="form-control" placeholder="YYYY" id="year" maxlength="4">
+             </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Hide Address</label>
+            <div class="col-sm-10">
+              <label class="radio-inline"> <input type="radio" name="hideAddress" id="inlineCheckbox1" value="option1">
+                Yes
+              </label> <label class="radio-inline"> <input type="radio"  name="hideAddress" id="inlineCheckbox2" value="option2" checked>
+                No
+              </label>
+            </div>
+          </div>
+
+            </form>
+            <div class="col-sm-offset-2 col-sm-10">
+              <a href="view-garden.html"><button type="submit" class="btn btn-default">Register</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.0/js/jasny-bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+			//when page has loaded
+			$(document).ready(function() {
+				$('.mynavbar').load("./nav.html #loginnav");
+			});//end document ready
+		</script>
+</body>
+</html>
