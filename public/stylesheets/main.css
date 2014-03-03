@@ -241,12 +241,13 @@ navigation bar section
 	margin: 5px;
 	background: none repeat scroll 0% 0% rgb(255, 255, 255);
 	border: 1px solid rgb(183, 192, 199);
-	color: #FB4;
+	color: #FFF;
 	float: left;
-	font-size: 0.9em;
+	font-size: 30px;
 	padding: 6px;
 	position: relative;
 	text-decoration: none;
+	line-height: 40px;
 }
 
 .marketing .story {
@@ -267,7 +268,7 @@ navigation bar section
 	background-repeat: no-repeat;
 	background-size: 226px 226px;
 	height: 226px;
-	margin-top: -226px;
+	/*margin-top: -226px;*/
 	z-index: 23;
 }
 
@@ -281,8 +282,9 @@ navigation bar section
 
 .thumbs-hovering {
 	height: 226px;
+	width: 226px;
 	text-decoration: none;
-	background-color: #fff;
+	background-color: #888;
 	margin-top: -19px;
 }
 
@@ -311,4 +313,8 @@ navigation bar section
 	width: 226px;
 	height: 19px;
 	color: #888;
+}
+.thumbs-hovering ul {
+	margin-left: 31px;
+	margin-top: 24px;
 }
