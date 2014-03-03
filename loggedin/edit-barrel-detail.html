@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Register: Rain Barrel</title>
+<title>Edit</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
@@ -21,46 +21,72 @@
 
   <!-- end of Responsive navbar==========================================-->
 
+
   <!-- Form -->
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1" style="color: black;">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <ul class="nav nav-tabs">
+          <li><a href="view-barrel.html">View</a></li>
+          <li><a href="barrel-comments.html">Comments (2)</span></a></li>
+          <li class="active"><a href="edit-barrel-detail.html">Edit Information</a></li>
+          <li><a href="#" onclick="javascript:OpenModal();">Delete Page</a></li>
+          <!-- Modal -->
+          <div class=" modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true" style="color:black;">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Delete This Page?</h4>
+                </div>
+                <div class="modal-body">This action cannot be undone. Are you sure?</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <a href="loggedin.html"><button type="button" class="btn btn-danger">Delete</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <div class="panel panel-default" style="color: black;">
           <div class="panel-heading">
-            <h3 class="panel-title">
-              <h2>Register Rain Barrel</h2>
-            </h3>
+            <h3 class="panel-title">Edit Rain Barrel</h3>
           </div>
           <div class="panel-body">
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Name" value="Susan C.">
                 </div>
               </div>
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Email">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Email" value=sc@gmail.com"">
                 </div>
               </div>
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Telephone</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Telephone">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Telephone" value="123-4567">
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Rain Barrel Title</label>
+                <label for="inputPassword3" class="col-sm-2 control-label">Rain Garden Title</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Barrel Title">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Garden Title" value="Rain Garden">
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Rain Barrel Owner</label>
+                <label for="inputPassword3" class="col-sm-2 control-label">Rain Garden Owner</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Barrel Owner">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Garden Owner" value="Susan C.">
                 </div>
               </div>
               <div class="form-group">
@@ -68,7 +94,7 @@
                 <div class="col-sm-10">
                   <select class="form-control">
                     <option>Choose Property Type</option>
-                    <option>Residential</option>
+                    <option selected>Residential</option>
                     <option>Commercial</option>
                     <option>Business</option>
                     <option>Other</option>
@@ -76,9 +102,9 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Rain Barrel Address</label>
+                <label for="inputPassword3" class="col-sm-2 control-label">Rain Garden Address</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Barrel Address">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Garden Address">
                 </div>
               </div>
               <div class="form-group">
@@ -94,13 +120,13 @@
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
                 <div class="col-sm-10">
-                  <textarea class="form-control" rows="5" placeholder="Description"></textarea>
+                  <textarea class="form-control" rows="5" placeholder="Description">This rain barrel collects rainwater from my downspout. I use this water to do some gardening around my house.</textarea>
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Upload Photo</label>
+                <label for="inputPassword3" class="col-sm-2 control-label">Change Photo</label>
                 <div class="col-sm-10" style="top: 5px;">
-                  <input type="file" title="Select Picture to Add">
+                  <input type="file" title="Select Picture to Change">
                 </div>
               </div>
 
@@ -115,7 +141,7 @@
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
-                    <option>4</option>
+                    <option selected>4</option>
                     <option>5</option>
                     <option>6</option>
                     <option>7</option>
@@ -133,7 +159,7 @@
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5</option>
+                    <option selected>5</option>
                     <option>6</option>
                     <option>7</option>
                     <option>8</option>
@@ -167,7 +193,7 @@
                   <select class="form-control">
                     <option>Year</option>
                     <option>2014</option>
-                    <option>2013</option>
+                    <option selected>2013</option>
                     <option>2012</option>
                     <option>2011</option>
                     <option>2010</option>
@@ -200,7 +226,7 @@
                   <select class="form-control">
                     <option>Old Drum</option>
                     <option>Garbage Can</option>
-                    <option>Commercially Manafactured</option>
+                    <option selected>Commercially Manafactured</option>
                     <option>Wine Barrel</option>
                     <option>Other</option>
                   </select>
@@ -209,20 +235,20 @@
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Size (Gallons)</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Size (Gallons)">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Size (Gallons)" value="50 gal">
                 </div>
               </div>
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Color</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Color">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Color" value="Orange, Brown">
                 </div>
               </div>
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Material</label>
                 <div class="col-sm-10">
                   <select class="form-control">
-                    <option>Plastic</option>
+                    <option selected>Plastic</option>
                     <option>Metal</option>
                   </select>
                 </div>
@@ -247,7 +273,7 @@
                             <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Frequency of Rain Barrel Overflow</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="How Often Does The Rain Barrel Overflow">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="How Often Does The Rain Barrel Overflow" value="Once a Year">
                 </div>
               </div>
                             <div class="form-group">
@@ -256,7 +282,7 @@
                   <select class="form-control">
                     <option>Covered</option>
                     <option>Screened</option>
-                    <option>Open</option>
+                    <option selected>Open</option>
                     <option>Other</option>
                   </select>
                 </div>
@@ -264,14 +290,14 @@
                     <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Place Where Rain Barrel Was Obtained</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Name Of Place Rain Barrel Was Obtained From">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Name Of Place Rain Barrel Was Obtained From" value="Home Depot">
                 </div>
               </div>
                             <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Installation Type</label>
                 <div class="col-sm-10">
                   <select class="form-control">
-                    <option>Self-Installed</option>
+                    <option selected>Self-Installed</option>
                     <option>Hired A Company</option>
                     <option>Other</option>
                   </select>
@@ -284,16 +310,15 @@
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
-                    <option>4+</option>
+                    <option selected>4+</option>
                   </select>
                 </div>
               </div>
             </form>
             <div class="col-sm-offset-2 col-sm-10">
-              <a href="view-barrel.html"><button type="submit" class="btn btn-default">Register</button></a>
+              <a href="view-barrel.html"><button type="submit" class="btn btn-default">Update Information</button></a>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
@@ -307,6 +332,13 @@
 			$(document).ready(function() {
 				$('.mynavbar').load("./nav.html #loginnav");
 			});//end document ready
+		</script>
+  <script>
+			function OpenModal() {
+				$('#myModal').modal({
+					show : true
+				});
+			};
 		</script>
 </body>
 </html>
