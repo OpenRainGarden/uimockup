@@ -6,7 +6,7 @@
 
 <!--  Load site-specific customizations after bootstrap. -->
 <link rel="stylesheet" type="text/css" href="public/stylesheets/main.css">
-<link rel="shortcut icon" type="image/png" href="public/images/logo_nobackground.png">
+<link rel="shortcut icon" type="image/png" href="./public/images/logo_nobackground.png">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
           <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
@@ -27,8 +27,10 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <ul class="nav nav-tabs">
-          <li><a href="view-garden.html">View</a></li>
-          <li class="active"><a href="garden-comments.html">Comments (2)</span></a></li>          
+          <li><a href="view-barrel.html">View</a></li>
+          <li class="active"><a href="barrel-comments.html">Comments (0)</span></a></li>          
+          <li><a href="edit-barrel-detail.html">Edit Information</a></li>
+          <li><a href="#" onclick="javascript:OpenModal();">Delete Page</a></li>
           <!-- Modal -->
           <div class=" modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
             aria-hidden="true" style="color:black;">
@@ -54,43 +56,45 @@
         <div class="panel panel-default" style="color: black;">
           <div class="panel-heading">
             <h3 class="panel-title">
-              Comments <span class="badge badge-default">2</span>
+              Comments <span class="badge badge-default">0</span>
             </h3>
           </div>
           <div class="panel-body">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <!-- Comments Start -->
-                <div class="media" style="padding: 1em;">
-                  <a class="pull-left" href="user-profile.html"> <span class="glyphicon glyphicon-user"
-                    style="font-size: 64px;"></span>
-                  </a>
-                  <div class="media-body">
-                    <h4 class="media-heading">
-                      Susan C. <small style="color:white;">(02-14-2014   7:00PM)</small></a>
-                    </h4>
-                    Garden is working great!
-                  </div>
-                  <div class="media" style="padding-top: 1em;">
-                    <a class="pull-left" href="#"> <img src="public/images/eg.jpg" width="64px" height="64px;">
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">
-                        Eduard G. <small style="color:white;">(02-17-2014   11:00AM)</small>
-                      </h4>
-                      <div class="panel panel-default">
-                        <small><strong>Originally posted by Susan C.</strong></small> <br />
-                        <br />Garden is working great!
-                      </div>
+                <div class="alert alert-info">This page has no comments. Be the first to comment!</div>
+                <hr />
+                <!-- Button trigger modal -->
+                <button class="btn btn-default pull-right" data-toggle="modal" data-target="#postComment">Post
+                  Comment</button>
 
-                      Garden looks nice! Which plants would you recommend for a somewhat wet area?
+                <!-- Modal -->
+                <div class="modal fade" id="postComment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="color:black;">
+                      <form class="form-horizontal">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title" id="myModalLabel">Comment on BMP</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <div class="col-md-12">
+                              <textarea row="5" class="form-control" id="comment-user" placeholder="Comment Here"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <a href="barrel-comments.html"><button type="button" class="btn btn-primary">Post
+                              Comment</button></a>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-                <hr />
-                <!-- Button trigger modal -->
-                 <a href="login-message.html"><button class="btn btn-default pull-right">Post
-                  Comment</button></a>
               </div>
             </div>
           </div>
@@ -98,40 +102,34 @@
       </div>
     </div>
   </div>
+  
+  
+
 
   <!-- Load Bootstrap JavaScript components. HTMLUnit (used in testing) requires JQuery 1.8.3 or below). -->
   <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  <script src="../public/js/holder.js"></script>
+  <script src="public/js/holder.js"></script>
+  <script type="text/javascript">
+      //when page has loaded
+      $(document).ready(function() {
+        $('.mynavbar').load("./nav.html #loginnav");
+      });//end document ready
+    </script>
   <script>
-			function OpenModal() {
-				$('#myModal').modal({
-					show : true
-				});
-			};
-		</script>
-  <script>
-			function OpenReply() {
-				$('#postReply').modal({
-					show : true
-				});
-			};
-		</script>
-    
-      <script>
-      function OpenReply2() {
-        $('#postReply2').modal({
+      function OpenModal() {
+        $('#myModal').modal({
           show : true
         });
       };
     </script>
-      <script type="text/javascript">
-      //when page has loaded
-    $(document).ready(function() {
-      $('.mynavbar').load("./navbar.html #globalnav");
-    });//end document ready
-
-   </script>
+  <script>
+      function OpenReply() {
+        $('#postReply').modal({
+          show : true
+        });
+      };
+    </script>
     
 </body>
 </html>
