@@ -27,9 +27,9 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <ul class="nav nav-tabs">
-          <li><a href="view-garden.html">View</a></li>
-          <li><a href="garden-comments.html">Comments (2)</span></a></li>
-          <li class="active"><a href="edit-garden-detail.html">Edit Information</a></li>
+          <li><a href="view-barrel.html">View</a></li>
+          <li><a href="barrel-comments.html">Comments (0)</span></a></li>
+          <li class="active"><a href="edit-barrel-detail.html">Edit Information</a></li>
           <li><a href="#" onclick="javascript:OpenModal();">Delete Page</a></li>
           <!-- Modal -->
           <div class=" modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -55,14 +55,38 @@
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <div class="panel panel-default" style="color: black;">
           <div class="panel-heading">
-            <h3 class="panel-title">Edit Rain Garden</h3>
+            <h3 class="panel-title">Edit Rain Barrel</h3>
           </div>
           <div class="panel-body">
             <form class="form-horizontal" role="form">
               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Rain Garden Title</label>
+                <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Garden Title" value="Rain Garden">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Name" value="Susan C.">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Email" value="sc@gmail.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Telephone</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Telephone" value="123-4567">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Rain Barrel Title</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Barrel Title" value="Rain Barrel">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Rain Barrel Owner</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Barrel Owner" value="Susan C.">
                 </div>
               </div>
               <div class="form-group">
@@ -78,9 +102,9 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Rain Garden Address</label>
+                <label for="inputPassword3" class="col-sm-2 control-label">Rain Barrel Address</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Garden Address">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Barrel Address">
                 </div>
               </div>
               <div class="form-group">
@@ -96,7 +120,7 @@
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
                 <div class="col-sm-10">
-                  <textarea class="form-control" rows="5" placeholder="Description">This is a rain garden located in Hawaii. It features many locally grown Hawaiian plants. Because of its location on the Windward side of the island of O'ahu, this rain garden's plants have been flourishing ever since it was built.</textarea>
+                  <textarea class="form-control" rows="5" placeholder="Description">This rain barrel collects rainwater from my downspout. I use this water to do some gardening around my house.</textarea>
                 </div>
               </div>
               <div class="form-group">
@@ -109,31 +133,8 @@
               <div class="page-header">
                 <h3>Additional Information</h3>
               </div>
- <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Plants Used</label>
-                <div class="col-sm-10">
-                  <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;Ahu&#8216;awa
-                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;&#256;kia
-                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1" checked>&#8216;&#256;kulikuli
-                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option2">Carex
-                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">&#8216;Ilie&#8216;e
-                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">Koki&#8216;o
-                    ke&#8216;oke&#8216;o
-                  </label> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1">Ko&#8216;oko&#8216;olau
-                  </label><br /> <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1"
-                    value="option1" checked>Kupukupu
-                  </label>
-                </div>
-              </div>
-                               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Rain Garden Size</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Rain Garden Size (sq. ft.)">
-                </div>
-              </div>
               <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Date
-                  Built</label>
+                <label for="inputPassword3" class="col-sm-2 control-label">Date Installed</label>
                 <div class="col-sm-2">
                   <select class="form-control">
                     <option>Month</option>
@@ -219,41 +220,105 @@
                   </select>
                 </div>
               </div>
-                            <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Size of Roof/Impervious Surface Contributing to Rain  Garden</label>
-                <div class="col-sm-10" style="top:2.5em;">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Square footage of roof or other impervious surface/drainage area contributing to the rain garden (Cubic Feet)">
-                </div>
-              </div>
-                           <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Water Flow Description</label>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Rain Barrel Type</label>
                 <div class="col-sm-10">
-                  <textarea class="form-control" rows="3" placeholder="Description of Water Flow Setup for Rain Garden"></textarea>
-                </div>
-              </div>
-                 <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Infiltration Rate</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Infiltration Rate of Soil (in./hr.)">
+                  <select class="form-control">
+                    <option>Old Drum</option>
+                    <option>Garbage Can</option>
+                    <option selected>Commercially Manafactured</option>
+                    <option>Wine Barrel</option>
+                    <option>Other</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Number of Rain Garden(s)</label>
-                <div class="col-sm-10" style="top:0.5em;">
+                <label for="inputEmail3" class="col-sm-2 control-label">Size (Gallons)</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Size (Gallons)" value="50 gal">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Color</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Color" value="Orange, Brown">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Material</label>
+                <div class="col-sm-10">
+                  <select class="form-control">
+                    <option selected>Plastic</option>
+                    <option>Metal</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Estimated Cost</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Estimated Cost">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Primary Use for Rain Barrel</label>
+                <div class="col-sm-10">
+                  <select class="form-control">
+                    <option>Gardening</option>
+                    <option>Lawn Watering</option>
+                    <option>Car Washing</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+                            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Frequency of Rain Barrel Overflow</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="How Often Does The Rain Barrel Overflow" value="Once a Year">
+                </div>
+              </div>
+                            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Rain Barrel Cover</label>
+                <div class="col-sm-10">
+                  <select class="form-control">
+                    <option>Covered</option>
+                    <option>Screened</option>
+                    <option selected>Open</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+                    <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Place Where Rain Barrel Was Obtained</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Name Of Place Rain Barrel Was Obtained From" value="Home Depot">
+                </div>
+              </div>
+                            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Installation Type</label>
+                <div class="col-sm-10">
+                  <select class="form-control">
+                    <option selected>Self-Installed</option>
+                    <option>Hired A Company</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Number of Rain Barrel(s)</label>
+                <div class="col-sm-10">
                   <select class="form-control">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
-                    <option>4+</option>
+                    <option selected>4+</option>
                   </select>
                 </div>
               </div>
             </form>
             <div class="col-sm-offset-2 col-sm-10">
-              <a href="view-garden.html"><button type="submit" class="btn btn-default">Update Information</button></a>
+              <a href="view-barrel.html"><button type="submit" class="btn btn-default">Update Information</button></a>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
